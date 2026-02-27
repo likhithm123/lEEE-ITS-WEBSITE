@@ -36,9 +36,9 @@
  * 6. Copy the Web App URL and paste it below in SCRIPT_URL.
  */
 
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw6ZKNJ4vMQQvOW9Qowd2xCy5S8JGAWLYXe2Oy_bJbqVruV1iIAb0ybAwu47qhQ1xyf/exec';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxtAtJdq3b4u6laBkyvN_iZW5fikXqbsDa-fmgj5hQQ5U0tafim_KjV4kMcTOJ8gj9_-w/exec';
 
-const MASTER_SHEET_ID = '1By6Ysgsq1zhTL5RZwK_aHBaiapaJnhYzo3Zh2dIUxT0';
+const MASTER_SHEET_ID = '1ktZV5cfJSjTfcdVFFEVv1OT4h7kxiuHgLMgguvzPV7E';
 
 const SHEETS = {
     PROFILE: MASTER_SHEET_ID,
@@ -106,8 +106,8 @@ export const getFromSheet = async (sheetType) => {
 
     try {
         const sheetId = SHEETS[sheetType];
-        const categoryMap = { 'PROFILE': 'Profiles', 'COMMUNITY': 'Community', 'BOOKINGS': 'Bookings', 'LOGS': 'Logs' };
-        const tabName = categoryMap[sheetType] || 'Logs';
+        const categoryMap = { 'PROFILE': 'profile', 'COMMUNITY': 'community', 'BOOKINGS': 'booking', 'LOGS': 'login' };
+        const tabName = categoryMap[sheetType] || 'login';
 
         const response = await fetch(`${SCRIPT_URL}?id=${sheetId}&sheetName=${tabName}`);
         return await response.json();

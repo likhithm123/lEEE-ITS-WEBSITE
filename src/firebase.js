@@ -3,12 +3,12 @@ import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChang
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyB_YelqOdjbcUjbvX7hGivMqzZIwoGsIsw",
-    authDomain: "ieee-its-b6c77.firebaseapp.com",
-    projectId: "ieee-its-b6c77",
-    storageBucket: "ieee-its-b6c77.firebasestorage.app",
-    messagingSenderId: "152204483958",
-    appId: "1:152204483958:web:09fd78f110a3bdaace6e57"
+    apiKey: "AIzaSyCzCbPB4SF5FqQ2ljMj8tVPIYhqky6OW4Y",
+    authDomain: "ieeeits.firebaseapp.com",
+    projectId: "ieeeits",
+    storageBucket: "ieeeits.firebasestorage.app",
+    messagingSenderId: "421183044788",
+    appId: "1:421183044788:web:1a72ca50b3f4dfa7802be1"
 };
 
 // Initialize Firebase
